@@ -11,7 +11,7 @@ export default function Player({ player, hand }) {
     <div className={`player ${to === player ? 'selected-player' : ''}`} onClick={() => setTo(player)}>
       <p>Player {player}</p>
       <CardList
-        cardLocation={player}
+        player={player}
         cards={hand}
         setFrom={setFrom}
         selectedCard={selectedCard}
