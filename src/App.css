@@ -1,6 +1,36 @@
 * {
   box-sizing: border-box;
 }
+/* 
+.section-1 {
+  display: flex;
+} */
+
+.title{
+  /* background-color: antiquewhite; */
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-style: italic;
+  font-family: 'Yatra One', sans-serif;
+  animation: pulse 15s infinite alternate;
+  width: max-content;
+  align-self: center;
+}
+
+@keyframes pulse {
+  0% {
+      /* background-color: rgb(250, 237, 237); */
+      background-color: khaki;
+  }
+  50% {
+      /* background-color: rgb(254, 251, 241); */
+      background-color: cornflowerblue;
+  }
+  100% {
+      /* background-color: rgb(241, 251, 255); */
+      background-color: goldenrod;
+  }
+}
 
 html {
   text-align: center;
@@ -87,8 +117,9 @@ section {
 .player {
   margin: 10px;
   padding: 10px;
-  background-color: lightgreen;
+  background-color: khaki;
     border: solid 5px green;
+  border-radius: 15px;
 }
 
 .selected {
@@ -97,5 +128,5 @@ section {
 }
 
 .selected-player {
-  border: solid 5px red;
+  border: solid 5px #B90A0A;
 }
